@@ -1,0 +1,3 @@
+[submodule "DataTables"]
+	path = DataTables
+	url = git@github.com:DataTables/DataTables.git
