@@ -4,6 +4,8 @@ The `datatables-rails` gem packages the [jQuery DataTables](http://www.datatable
 
 The MAJOR, MINOR and PATCH version numbers of this gem will follow the version numbers of jQuery DataTables. The fourth version number will be increased for changes unrelated to the assets themselves.
 
+For an alternative solution, feel free to take a look at the [jquery-datatables-rails gem](https://github.com/rweng/jquery-datatables-rails).
+
 ## Installation
 
 To use this gem you need to include [jQuery](http://jquery.com/) in your applications's javascript.
