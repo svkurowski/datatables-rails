@@ -1,4 +1,4 @@
-# datatables-rails
+# datatables-rails [![Gem Version](https://badge.fury.io/rb/datatables-rails.svg)](http://badge.fury.io/rb/datatables-rails)
 
 The `datatables-rails` gem packages the [jQuery DataTables](http://www.datatables.net/) assets for easy inclusion in an Rails >= 3.1 application using the asset pipeline.
 
