@@ -15,7 +15,7 @@ To do so you may use the [jquery-rails gem](https://github.com/rails/jquery-rail
 Add this line to your application's `Gemfile`:
 
 ```
-gem 'datatables-rails', '~> 1.10.3.0'
+gem 'datatables-rails', '~> 1.10.7.0'
 ```
 
 And then execute:

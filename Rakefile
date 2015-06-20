@@ -43,8 +43,8 @@ end
 
 namespace :stylesheets do
   files = {
-    "DataTables/media/css/jquery.dataTables.css" => "app/assets/stylesheets/datatables/jquery_datatables.css",
-    "DataTables/media/css/jquery.dataTables_themeroller.css" => "app/assets/stylesheets/datatables/jquery_datatables_themeroller.css"
+    "DataTables/media/css/jquery.dataTables.css" => "app/assets/stylesheets/datatables/jquery_datatables.css.scss",
+    "DataTables/media/css/jquery.dataTables_themeroller.css" => "app/assets/stylesheets/datatables/jquery_datatables_themeroller.css.scss"
   }
   files.keys.each do |src_file|
     tgt_file = files[src_file]
@@ -53,14 +53,14 @@ namespace :stylesheets do
     end
   end
 
-  desc "Copy DataTables/media/css/jquery.dataTables.css"
+  desc "Copy DataTables/media/css/jquery.dataTables.scss"
   task copy: files.values
 
   desc "Fix image URLs in stylesheets"
   task :fix_urls do
     files.values.each do |tgt_file|
       content = File.read(tgt_file)
-      fixed_content = content.gsub(/..\/images\//, "")
+      fixed_content = content.gsub(/url\(\"\.\.\/images\/([A-Za-z_]*.png)\"\)/, 'image-url("\1")')
       File.open(tgt_file, "w") { |f| f.puts fixed_content}
     end
   end
