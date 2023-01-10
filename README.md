@@ -1,5 +1,7 @@
 # datatables-rails [![Gem Version](https://badge.fury.io/rb/datatables-rails.svg)](http://badge.fury.io/rb/datatables-rails)
 
+# This Gem is unmaintained and deprecated. Please use Webpacker or a similar solution instead.
+
 The `datatables-rails` gem packages the [jQuery DataTables](http://www.datatables.net/) assets for easy inclusion in an Rails >= 3.1 application using the asset pipeline.
 
 The MAJOR, MINOR and PATCH version numbers of this gem will follow the version numbers of jQuery DataTables. The fourth version number will be increased for changes unrelated to the assets themselves.
